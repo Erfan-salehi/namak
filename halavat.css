@@ -1,0 +1,167 @@
+@import url(http://awebfont.ir/css?id=1116);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'B Yekan',tahoma ,Arial;
+}
+.container{
+    margin: 0 auto;
+    width: 1460px;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header_right{
+    display: flex;
+}
+.header_right img{
+    width: 200px;
+}
+.header_right .menu_list{
+   list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+.header_right .menu_item{
+    padding: 10px 20px;
+    color: #999;
+    font-size: 18px;
+}
+.header_left{
+    display: flex;
+}
+.header_left p{
+    padding: 5px 20px;
+    color: #288ed9;
+}
+.header_left .header_login{
+    background-color: #288ed9;
+    color: white;
+    border-radius: 30px;
+}
+.header_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.header_bottom_right{
+    width: 40%;
+    margin-top: 30px;
+}
+.title{
+    margin: 50px 0 20px;
+    color: #288ed9;
+    font-size: 35px;
+}
+.info{
+    color: #7e7e7e;
+    line-height: 32px;
+    font-size: 22px;
+    text-align: justify;
+}
+.header_bottom_left{
+    width: 60%;
+}
+.tasvir1{
+    width: 900px;
+    margin-top: 80px;
+    margin-right: 60px;
+}
+.ejra{
+ background: linear-gradient(to bottom,rgba(214,238,255,0)0,#d6eeff 100%);
+margin-top: 70px;
+}
+.ejra_title{
+    text-align: center;
+}
+.ejra_list{
+    display: flex;
+    padding: 100px 0;
+}
+.ejra_item{
+    margin: 0 10px;
+    padding: 40px 15px 20px;
+    border: solid 1px lightgray;
+    color: #5e5e5e;
+    border-radius: 10px;
+    position: relative;
+}
+.ejra_item_titr{
+    width: 240px;
+    background-color: #288ed9;
+    padding: 5px 10px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    border-radius: 25px;
+    left: 0;
+    right: 0;
+}
+.ejra_item p{
+    line-height: 30px;
+    text-align: justify;
+}
+.mcleen_title{
+    text-align: center;
+    margin-top:  50px;
+}
+.mcleen{
+    display: flex;
+}
+.mcleen_right{
+    width: 50%;
+    padding: 60px 30px;
+}
+.mcleen_title_right{
+    margin: 75px 0 35px;
+    color:#288ed9;
+
+}
+.mcleen_desc{
+    font-size: 25px;
+    text-align: justify;
+    line-height: 47px;
+}
+.mcleen_left{
+    width: 50%;
+}
+.mcleen_tasvir{
+   width: 120%; 
+}
+.mcleen_tasvir2{
+    width: 80%;
+}
+.mcleen_tasvir3{
+    width: 80%;
+    margin-right: 100px;
+}
+.mcleen:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.mcleen_title_right2{
+    margin: 75px 0 35px;
+    color: green;
+}
+.mcleen_title_right3{
+    margin: 75px 0 35px;
+    color: #472b1d;
+}
+.footer{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 25px;
+    color: #999;
+
+}
+.socials i{
+    padding: 10px;
+}
