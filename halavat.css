@@ -1,5 +1,4 @@
-@import url(http://awebfont.ir/css?id=1116);
-
+@import url('https://awebfont.ir/css?id=1116');
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,9 @@ html {
 }
 .container {
   margin: 0 auto;
-  width: 1460px;
+  width: 100%;
+  max-width: 1460px;
+  padding: 0 15px;
 }
 .header_top {
   display: flex;
@@ -81,9 +82,10 @@ html {
   width: 60%;
 }
 .tasvir1 {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin-top: 80px;
-  margin-right: 60px;
+  margin-right: 0;
 }
 .ejra {
   background: linear-gradient(to bottom, rgba(214, 238, 255, 0) 0, #d6eeff 100%);
@@ -97,6 +99,8 @@ html {
   padding: 100px 0;
 }
 .ejra_item {
+  flex: 1;
+  min-width: 0;
   margin: 0 10px;
   padding: 40px 15px 20px;
   border: solid 1px lightgray;
@@ -143,6 +147,8 @@ html {
 }
 .mcleen_left {
   width: 50%;
+  min-width: 0;
+  overflow: hidden;
 }
 .mcleen_tasvir {
   width: 120%;
@@ -177,4 +183,170 @@ html {
 .socials a {
   text-decoration: none;
   color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header_top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header_right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_right .menu_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .header_right .menu_item {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .header_left {
+    justify-content: center;
+  }
+
+  .header_bottom {
+    flex-direction: column;
+  }
+
+  .header_bottom_right,
+  .header_bottom_left {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 27px;
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+
+  .info {
+    font-size: 17px;
+    line-height: 2;
+  }
+
+  .tasvir1 {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .ejra {
+    margin-top: 30px;
+  }
+
+  .ejra_title {
+    font-size: 23px;
+    padding: 20px 5px;
+  }
+
+  .ejra_list {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 35px;
+  }
+
+  .ejra_item {
+    margin: 0;
+    padding: 35px 15px 20px;
+  }
+
+  .ejra_item_titr {
+    width: calc(100% - 30px);
+    font-size: 17px;
+  }
+
+  .ejra_item p {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .mcleen_title {
+    font-size: 23px;
+    line-height: 1.8;
+  }
+
+  .mcleen {
+    flex-direction: column !important;
+  }
+
+  .mcleen_right,
+  .mcleen_left {
+    width: 100%;
+  }
+
+  .mcleen_right {
+    padding: 25px 15px;
+  }
+
+  .mcleen_title_right,
+  .mcleen_title_right2,
+  .mcleen_title_right3 {
+    margin: 15px 0 25px;
+    font-size: 25px;
+  }
+
+  .mcleen_desc {
+    font-size: 17px;
+    line-height: 2;
+  }
+
+  .mcleen_tasvir,
+  .mcleen_tasvir2,
+  .mcleen_tasvir3 {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    font-size: 17px;
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_right img {
+    width: 150px;
+  }
+
+  .header_right .menu_item {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+
+  .ejra_title {
+    font-size: 20px;
+  }
+
+  .mcleen_title {
+    font-size: 19px;
+  }
+
+  .mcleen_desc {
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
 }
